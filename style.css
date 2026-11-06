@@ -5,7 +5,7 @@
 }
 
 html, body {
-  font-family: "Figtree", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: Figtree, sans-serif;
   background: #fafbfc;
   color: #111;
   -webkit-font-smoothing: antialiased;
@@ -270,7 +270,7 @@ html, body {
 
 .boxtext{
   font-size: 12px;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
   letter-spacing: -0.4px;
   color: #475569;
 }
@@ -508,4 +508,8 @@ html, body {
 }
 .rate-btn:hover {
   background: #db2777;
+}
+
+button, input, select, textarea, kbd {
+  font-family: inherit;
 }

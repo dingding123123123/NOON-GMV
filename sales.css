@@ -145,7 +145,7 @@
   background: #6b7280;
   color: #fff;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
 }
 .ad-pill-h{
@@ -163,7 +163,7 @@
 /* Tabs */
 .sales-tabs {
   display: flex;
-  gap: 40px;
+  gap: 10px;
   height: 48px;
   /* padding: 0 32px; */
   border-bottom: 1px solid #eef0f2;
@@ -172,9 +172,9 @@
 .tab {
   background: transparent;
   border: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
-  color: #6b7280;
+  color: #374151;
   padding: 18px 20px;
   cursor: pointer;
   position: relative;
@@ -198,7 +198,7 @@
 }
 
 .sales-content {
-  padding: 24px;
+  padding: 28px 24px;
   background: #FAFBFC;
 }
 
@@ -253,7 +253,7 @@
 }
 .filter-title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: #374151;
   flex-shrink: 0;
 }
@@ -273,7 +273,7 @@
   border-radius: 8px;
   font-size: 13px;
   color: #1f2937;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
   height: 36px;
   min-width: 110px;
@@ -298,11 +298,11 @@
 }
 .period-item {
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 400;
 }
 .period-item.active {
   color: #111;
-  font-weight: 600;
+  font-weight: 500;
 }
 .period-sep {
   color: #cbd5e1;
@@ -344,7 +344,7 @@
 }
 .metric-label {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: #0f172a;
 }
 .info-icon {
@@ -352,7 +352,7 @@
 }
 .metric-value {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   color: #1f2937;
   letter-spacing: -0.5px;
   margin-bottom: 14px;
@@ -387,7 +387,7 @@
   padding: 3px 8px;
   border-radius: 999px;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .change-badge.up {
   background: #16a34a;
@@ -487,7 +487,7 @@
 }
 .chart-title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: #1f2937;
   display: flex;
   align-items: center;
@@ -584,7 +584,7 @@
 .chart-sub-inline {
   font-size: 14px;
   color: #374151;
-  font-weight: 500;
+  font-weight: 400;
 }
 .chart-empty {
   flex: 1;
@@ -668,7 +668,7 @@
 }
 .tp-title {
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 500;
   color: #1f2937;
 }
 .tp-toggle {
@@ -683,7 +683,7 @@
   padding: 5px 14px;
   border-radius: 8px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #64748b;
   cursor: pointer;
 }
@@ -769,8 +769,8 @@
   display: block;
 }
 .tp-thumb-img {
-  width: 47px !important;
-  height: 60px !important;
+  width: 42px !important;
+  height: 42px !important;
   object-fit: cover;
   border-radius: 4px;
   display: block;
@@ -778,7 +778,7 @@
 .tp-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
 .tp-sku {
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 500;
   color: #0f172a;
   letter-spacing: 0.1px;
   overflow: hidden;
@@ -799,7 +799,7 @@
   align-items: center;
   gap: 4px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   color: #004efa;
   text-decoration: none;
   margin-top: 2px;
@@ -816,4 +816,250 @@ body .rate-btn {
 @media (max-width: 1200px) {
   .metrics-grid { grid-template-columns: 1fr; }
   .top-products { position: static; }
+}
+
+/* ============ Reference v2: 1688shop ============ */
+.icon-btn .count-badge {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: #dc2626;
+  border: 1.5px solid #fff;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13px;
+  text-align: center;
+}
+
+.app-body > .sidebar {
+  position: sticky;
+  top: 64px;
+  height: calc(100vh - 64px);
+  min-height: 0;
+}
+.sidebar-nav {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.sidebar-nav::-webkit-scrollbar { display: none; }
+.sidebar-nav .nav-item { flex-shrink: 0; }
+.nav-icon { position: relative; }
+.pro-badge {
+  position: absolute;
+  top: -14px;
+  right: -20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #7c3aed;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pro-badge svg { width: 13px; height: 13px; }
+
+.pro-card {
+  flex-shrink: 0;
+  width: 80px;
+  margin-top: 8px;
+  padding: 10px 6px 8px;
+  border-radius: 10px;
+  background: #f5f3ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+.pro-card-crown .pro-badge {
+  position: static;
+  border: none;
+}
+.pro-card-text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #374151;
+}
+.pro-card-btn {
+  width: 100%;
+  height: 24px;
+  border: none;
+  border-radius: 6px;
+  background: #7c3aed;
+  color: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.pro-card-btn:hover { background: #6d28d9; }
+.sidebar-bottom { margin-top: 8px; }
+
+.filter-date { min-width: 210px; }
+
+.metric-negative {
+  background: linear-gradient(99deg, #F9FAFB 4.1%, #FEE2E2 106.35%);
+}
+.metric-negative .metric-bg-img { mix-blend-mode: luminosity; opacity: 0.8; }
+.change-badge.down {
+  background: #dc2626;
+  color: #fff;
+}
+.currency-sar {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 4px;
+  color: #1f2937;
+  flex-shrink: 0;
+  align-self: center;
+}
+.sidebar-nav .nav-item .boxtext-nowrap {
+  display: block;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: -0.4px;
+}
+
+/* ============ Header (measured from reference, 1467px viewport) ============ */
+.top-header {
+  height: 64px;
+  padding: 0 14px 0 17px;
+  gap: 0;
+}
+.top-header .header-left {
+  gap: 0;
+  margin-left: 0;
+}
+.top-header .menu-btn {
+  width: 30px;
+  height: 30px;
+}
+.top-header .menu-btn svg {
+  width: 20px;
+  height: 20px;
+}
+.top-header .logoDiv {
+  width: 193px !important;
+  margin-left: 14px;
+}
+.top-header .vantage-img {
+  width: 109px;
+  height: auto;
+}
+.top-header .divider {
+  height: 22px;
+  margin: 0;
+}
+.top-header .project-info {
+  width: 352px;
+  padding-left: 20px;
+  gap: 1px;
+}
+.top-header .project-id {
+  font-size: 10px;
+  line-height: 12px;
+  color: #4b5563;
+}
+.top-header .project-name {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #111827;
+}
+.top-header .header-center {
+  flex: 1;
+  justify-content: flex-start;
+}
+.top-header .search-box {
+  width: 379px;
+  max-width: 379px;
+  height: 40px;
+  margin: 0;
+  padding: 0 18px 0 12px;
+  gap: 10px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+.top-header .search-box .search-icon {
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  color: #4b5563;
+}
+.top-header .search-box input {
+  font-family: inherit;
+  font-size: 14px;
+}
+.top-header .search-box input::placeholder {
+  color: #6b7280;
+}
+.top-header .shortcut {
+  font-family: inherit;
+  font-size: 12px;
+  color: #4b5563;
+}
+.top-header .header-right {
+  gap: 0;
+}
+.top-header .icon-btn {
+  width: 40px;
+  height: 40px;
+}
+.top-header .icon-btn svg {
+  width: 20px;
+  height: 20px;
+  color: #374151;
+}
+.top-header .icon-btn .count-badge {
+  top: 4px;
+  right: 5px;
+}
+.top-header .icon-btn.has-dot .dot {
+  top: 8px;
+  right: 8px;
+  width: 8px;
+  height: 8px;
+}
+.top-header .header-divider {
+  height: 24px;
+  margin: 0 12px;
+}
+.top-header .lang {
+  padding: 0 10px;
+  gap: 7px;
+  font-size: 14px;
+  color: #374151;
+}
+.top-header .lang svg {
+  width: 14px;
+  height: 14px;
+}
+.top-header .avatar {
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  font-size: 14px;
+}
+.top-header .shortcut {
+  display: inline-flex;
+  align-items: center;
+}
+.top-header .shortcut-cmd {
+  font-size: 8px;
 }
