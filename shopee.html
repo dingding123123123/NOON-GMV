@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商业分析</title>
+  <link rel="stylesheet" href="shopee.css">
+</head>
+<body>
+  <!-- ============ Header ============ -->
+  <header class="sp-header">
+    <div class="sp-header-left">
+      <svg class="sp-logo" viewBox="0 0 113 126" width="26" height="29" xmlns="http://www.w3.org/2000/svg"><path fill="#ee4d2d" fill-rule="evenodd" d="M76.968 94.081c-.741 6.073-4.447 10.939-10.187 13.374-3.194 1.356-7.476 2.086-10.871 1.856-5.279-.2-10.241-1.478-14.812-3.809-1.664-.848-4.104-2.525-5.943-4.058-.42-.348-.635-.66-.232-1.228.43-.645 2.13-3.102 2.398-3.507.362-.552.956-.58 1.5-.153.075.057.628.486.74.569 4.4 3.423 10.076 5.994 16.384 6.235 7.955-.108 13.726-3.65 14.757-9.136 1.135-6.046-3.69-11.231-12.98-14.124-2.953-.92-10.38-3.872-11.75-4.672-6.474-3.77-9.488-8.717-9.058-14.807.657-8.438 8.534-14.762 18.53-14.804 4.744-.01 9.194 1.036 13.159 2.695 1.459.61 4.176 2.066 5.145 2.785.677.494.625 1.046.358 1.474-.395.656-1.57 2.483-2.043 3.245-.345.523-.773.583-1.38.2-5.112-3.41-10.37-4.567-15.103-4.661-6.828.134-11.978 4.165-12.316 9.691-.09 4.992 3.729 8.613 11.833 11.378C71.83 77.964 78.17 84.24 76.968 94.08ZM56.32 7.34c10.83 0 19.66 10.208 20.073 22.986H36.248C36.66 17.548 45.489 7.34 56.32 7.34ZM97.44 125.687c5.72-.155 10.355-4.776 10.844-10.504l.037-.692 4.05-81.638v-.001a2.402 2.402 0 0 0-2.4-2.526H83.95C83.312 13.454 71.185 0 56.32 0 41.455 0 29.33 13.454 28.69 30.326H2.632a2.402 2.402 0 0 0-2.35 2.588H.28l3.696 81.319.055 1.02c.564 5.658 4.7 10.215 10.322 10.425h.002l82.669.013.414-.004Z"/></svg>
+      <div style="margin-top:2px;display: flex;justify-content: center;align-items: center;">
+        <span class="sp-crumb-muted">首页</span>
+        <svg class="sp-crumb-arrow" viewBox="0 0 16 16" width="16" height="16"><path d="M6 3l5 5-5 5" fill="none" stroke="#999" stroke-width="1.4"/></svg>
+        <span class="sp-crumb">商业分析</span>
+      </div>
+      
+    </div>
+    <div class="sp-header-right">
+      <button class="sp-head-btn">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="none"><path d="M1.43213 6.85588L3.47657 2.05588H12.9877L15.0321 6.85588" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.03223 6.85583V13.2558H13.4322V6.85583" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.43994 9.43994L5.43994 11.4399" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.24023 8.71994L8.24023 11.4399" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.96 6.95993L10.96 11.4399" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.72021 7.73574L6.80021 5.65574L8.32021 7.17574L10.9202 4.57574" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.9677 3.49148L11.3862 5.9881L9.51481 4.23624L11.9677 3.49148Z" fill="#333333"/></svg>
+        Shopee 服务市场
+      </button>
+      <button class="sp-head-btn">
+        <svg viewBox="0 0 17 17" width="16" height="16"><path fill="#333" fill-rule="evenodd" clip-rule="evenodd" d="M10.625 3.719h2.656a.531.531 0 0 1 .529.584l-.106 1.062a.531.531 0 0 1-1.058-.105l.048-.479H1.093l.444 8.53a.531.531 0 0 0 .53.502H3.72a.531.531 0 1 1 0 1.062H2.068c-.846 0-1.545-.66-1.592-1.505L.001 4.28a.531.531 0 0 1 .53-.561h2.656a3.719 3.719 0 0 1 7.438 0Zm-1.063 0a2.656 2.656 0 0 0-5.312 0h5.313Zm2.807 4.104a1.594 1.594 0 0 1 1.587-1.448h1.982a.531.531 0 0 1 0 1.063h-1.982a.531.531 0 0 0-.53.482l-.457 5.507a1.593 1.593 0 0 1-1.586 1.448h-5.54a.531.531 0 1 1 0-1.063h5.54a.53.53 0 0 0 .528-.482l.458-5.507Zm-8.119 8.38a.797.797 0 1 1-1.594 0 .797.797 0 0 1 1.594 0Zm6.11.797a.797.797 0 1 0 0-1.594.797.797 0 0 0 0 1.594Zm-6.864-5.562a.531.531 0 0 1-.308-.482V7.119c0-.229.146-.432.363-.504l3.187-1.063a.531.531 0 0 1 .336 0l3.188 1.063a.531.531 0 0 1 .363.504v3.837c0 .207-.12.395-.308.482l-3.185 1.474a.531.531 0 0 1-.449.001l-3.187-1.475Zm2.879-2.844-2.125-.73v2.752l2.125.984V8.594Zm3.188 2.022V7.863l-.532.183V9.5a.531.531 0 0 1-1.062 0V8.411l-.531.183V11.6l2.125-.984Zm-1.15-3.497-.072.024a.518.518 0 0 0-.019.006l-1.416.472L5.4 7.12l1.507-.503 1.508.503Z"/></svg>
+        全托管服务
+      </button>
+      <svg class="sp-book" viewBox="0 0 16 16" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path fill="#333" d="M6.50692156,2 C7.08217707,2 7.87390592,2.44054357 8.51774029,2.86712042 C9.60884094,2.258011 10.160514,2 10.5220425,2 L14.0031784,2 C14.5554632,2 15.0031784,2.44771525 15.0031784,3 L15.0031784,12.9195918 C15.0031784,13.4718638 14.5554504,13.9195687 14.0031784,13.9195687 L10.5075199,13.9195687 C10.1708939,13.9195687 8.93829366,14.7893464 8.5109755,14.7893464 C8.08365734,14.7893464 6.9191394,13.9195687 6.51058323,13.9195687 L3.00003214,13.9195687 C2.44772964,13.9196008 2,13.4718712 2,12.9195687 L2,3 C2,2.44771525 2.44771525,2 3,2 L6.50692156,2 Z M14.0031784,3 L10.5220425,3 C10.3944161,3 9.75539186,3.31590418 9,3.743 L9,13.5246778 C9.39284596,13.3133631 9.67116172,13.1714832 9.83494726,13.0990383 C10.0806256,12.9903709 10.2722293,12.9360787 10.5075199,12.9360787 L14.0031784,12.9360902 L14.0031784,3 Z M6.50692156,3 L3,3 L3,12.9213505 L6.59964678,12.922821 C6.88638522,12.9329781 7.08273474,12.9992251 7.51903855,13.2276522 L8,13.4869496 L8,3.723 C7.33510296,3.28246794 6.74282866,3 6.50692156,3 Z"/></svg>
+      <div class="sp-account-wrap" id="spAccount">
+        <div class="sp-account-trigger">
+          <div class="sp-account">
+            <div class="sp-account-name">YOUZHAN:main</div>
+            <div class="sp-account-co">
+              <svg viewBox="0 0 12 12" width="10" height="10"><path d="M1.5 11V1.5h6V11M7.5 4.5h3V11M3.5 3.5h2M3.5 5.5h2M3.5 7.5h2M.5 11h11" fill="none" stroke="#999" stroke-width="1"/></svg>
+              义乌市宥谌电子商务有...
+            </div>
+          </div>
+          <svg class="sp-account-chev" viewBox="0 0 16 16" width="16" height="16"><path d="M3 6l5 5 5-5" fill="none" stroke="#333" stroke-width="1.6"/></svg>
+        </div>
+        <div class="sp-account-menu">
+          <div class="sp-menu-head">
+            <div class="sp-menu-name">YOUZHAN:main</div>
+            <div class="sp-account-co">
+              <svg viewBox="0 0 12 12" width="10" height="10"><path d="M1.5 11V1.5h6V11M7.5 4.5h3V11M3.5 3.5h2M3.5 5.5h2M3.5 7.5h2M.5 11h11" fill="none" stroke="#999" stroke-width="1"/></svg>
+              义乌市宥谌电子商务有限公司
+            </div>
+          </div>
+          <a class="sp-menu-item">
+            <svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 5.5h11M10 2.5l3 3M14 10.5H3M6 13.5l-3-3" fill="none" stroke="#333" stroke-width="1.2"/></svg>
+            切换商家
+          </a>
+          <a class="sp-menu-item">
+            <svg viewBox="0 0 16 16" width="14" height="14"><path d="M9 2.5H3v11h6M7 8h7M11.5 5.5L14 8l-2.5 2.5" fill="none" stroke="#333" stroke-width="1.2"/></svg>
+            登出
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="sp-body">
+    <!-- ============ Sidebar ============ -->
+    <aside class="sp-sidebar">
+      <div class="sp-group">
+        <div class="sp-group-title">订单<i class="up"></i></div>
+        <a>我的订单</a><a>批量出货</a><a>退货/退款/取消</a><a>物流设置</a>
+      </div>
+      <div class="sp-group">
+        <div class="sp-group-title">商品<i class="up"></i></div>
+        <a>全球商品</a><a>店铺商品</a><a>添加商品</a><a>商品设置</a><a>Shopee标准商品</a>
+      </div>
+      <div class="sp-group">
+        <div class="sp-group-title">官方仓<i class="down"></i></div>
+      </div>
+      <div class="sp-group">
+        <div class="sp-group-title">营销中心<i class="up"></i></div>
+        <a>营销中心</a><a>Shopee广告</a><a>站外流量广告</a><a>折扣活动</a><a>店内秒杀</a><a>优惠券</a><a>跨境活动报名</a><a>联盟营销</a><a>直播和短视频看板</a><a>全球商品折扣</a>
+      </div>
+      <div class="sp-group">
+        <div class="sp-group-title">客户服务<i class="up"></i></div>
+        <a>聊聊管理</a><a>AI智能客服</a><a>评论管理</a>
+      </div>
+      <div class="sp-group">
+        <div class="sp-group-title">财务<i class="up"></i></div>
+        <a>我的收入</a><a>Shopee官方钱包</a><a>收款账户</a><a>卖家保证金</a>
+      </div>
+      <div class="sp-group">
+        <div class="sp-group-title">数据<i class="up"></i></div>
+        <a class="active">商业分析</a><a>账户健康状态</a>
+      </div>
+      <div class="sp-group">
+        <div class="sp-group-title">成长<i class="up"></i></div>
+        <a>卖家任务</a>
+      </div>
+    </aside>
+
+    <!-- ============ Main ============ -->
+    <main class="sp-main">
+      <div class="sp-shopbar">
+        <span class="sp-shopbar-label">当前店铺</span>
+        <div class="sp-select sp-select-shop">所有店铺<i class="chev"></i></div>
+        <div class="sp-search">
+          <span>搜索店铺</span>
+          <svg viewBox="0 0 16 16" width="14" height="14"><circle cx="7" cy="7" r="5" fill="none" stroke="#999" stroke-width="1.2"/><path d="M10.7 10.7L14 14" stroke="#999" stroke-width="1.2"/></svg>
+        </div>
+      </div>
+
+      <div class="sp-content">
+        <!-- Filter bar -->
+        <section class="sp-card sp-filter">
+          <div class="sp-filter-left">
+            <div class="sp-filter-box">
+              <span class="muted">统计时间</span>
+              <b>今日实时</b>
+              <span>今天至14:00 (GMT+08)</span>
+              <svg viewBox="0 0 16 16" width="14" height="14"><rect x="2" y="3" width="12" height="11" rx="1" fill="none" stroke="#333" stroke-width="1.1"/><path d="M2 6.5h12M5 1.5v3M11 1.5v3M5 9h1M7.5 9h1M10 9h1M5 11.5h1M7.5 11.5h1" stroke="#333" stroke-width="1.1"/></svg>
+            </div>
+            <div class="sp-filter-box">
+              <span class="muted">订单类型</span><i class="q"></i>
+              <span class="sp-filter-val">已确定订单</span><i class="chev"></i>
+            </div>
+          </div>
+          <button class="sp-export">
+            <svg viewBox="0 0 32 32" width="16" height="16"><path fill="#333" fill-rule="evenodd" clip-rule="evenodd" d="M30.3,30.3h-28c-0.6,0-1-0.4-1-1v-8c0-0.6,0.4-1,1-1c0.6,0,1,0.4,1,1v7h26v-7c0-0.6,0.4-1,1-1c0.6,0,1,0.4,1,1v8C31.3,29.8,30.9,30.3,30.3,30.3z M17.1,24C17,24,17,24,17.1,24c-0.2,0.2-0.4,0.3-0.7,0.3c0,0,0,0,0,0c-0.3,0-0.5-0.1-0.7-0.3l-6-7c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l4.3,5V5.3c0-0.6,0.4-1,1-1c0.6,0,1,0.4,1,1v15.3l4.3-5c0.4-0.4,1-0.4,1.4,0c0.4,0.4,0.4,1,0,1.4L17.1,24z"/></svg>
+            导出数据
+          </button>
+        </section>
+
+        <!-- Key metrics -->
+        <section class="sp-card sp-key">
+          <h2>关键指标</h2>
+          <div class="sp-metrics">
+            <div class="sp-metric active">
+              <div class="sp-metric-title">总销售额<i class="q"></i></div>
+              <div class="sp-metric-value"><small>USD</small> 6.35</div>
+              <div class="sp-metric-foot"><span>vs 00:00-14:00 昨天</span><span>-</span></div>
+            </div>
+            <div class="sp-metric">
+              <div class="sp-metric-title">总订单数<i class="q"></i></div>
+              <div class="sp-metric-value">1</div>
+              <div class="sp-metric-foot"><span>vs 00:00-14:00 昨天</span><span>-</span></div>
+            </div>
+            <div class="sp-metric">
+              <div class="sp-metric-title">总销售件数<i class="q"></i></div>
+              <div class="sp-metric-value">1</div>
+              <div class="sp-metric-foot"><span>vs 00:00-14:00 昨天</span><span>-</span></div>
+            </div>
+            <div class="sp-metric">
+              <div class="sp-metric-title">商品点击量<i class="q"></i></div>
+              <div class="sp-metric-value">53</div>
+              <div class="sp-metric-foot"><span>vs 00:00-14:00 昨天</span><span class="sp-trend up">1.89%</span></div>
+            </div>
+          </div>
+
+          <div class="sp-trend-head">
+            <h3>每个指标的趋势图表</h3>
+            <span class="sp-legend"><i></i>总销售额</span>
+          </div>
+          <svg class="sp-chart" id="spChart"></svg>
+        </section>
+
+        <!-- Metric analysis -->
+        <section class="sp-card sp-analysis">
+          <div class="sp-analysis-head">
+            <h2>指标分析</h2>
+            <div class="sp-select sp-select-metric">按总销售额<i class="chev"></i></div>
+          </div>
+          <div class="sp-donuts">
+            <div class="sp-donut-box">
+              <h4>店铺维度指标分析</h4>
+              <svg class="sp-donut" viewBox="0 0 300 300">
+                <circle cx="150" cy="150" r="99" fill="none" stroke="#3880e3" stroke-width="38"/>
+                <text x="150" y="155" text-anchor="middle">销售额&#160;%</text>
+                <line x1="150" y1="271" x2="150" y2="284" stroke="#3880e3" stroke-width="1"/>
+                <text class="lbl" x="155" y="289">100.00% YOUZHAN.br</text>
+              </svg>
+            </div>
+            <div class="sp-donut-box">
+              <h4>市场维度指标分析</h4>
+              <svg class="sp-donut" viewBox="0 0 300 300">
+                <circle cx="150" cy="150" r="99" fill="none" stroke="#3880e3" stroke-width="38"/>
+                <text x="150" y="155" text-anchor="middle">销售额&#160;%</text>
+                <line x1="150" y1="271" x2="150" y2="284" stroke="#3880e3" stroke-width="1"/>
+                <text class="lbl" x="155" y="289">100.00% BR</text>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <!-- Details -->
+        <section class="sp-card sp-detail">
+          <h2>详情</h2>
+          <table class="sp-table">
+            <thead>
+              <tr>
+                <th>店铺名称</th>
+                <th>市场</th>
+                <th class="r">销售额<i class="q"></i><i class="sort"></i></th>
+                <th class="r">订单数<i class="q"></i><i class="sort"></i></th>
+                <th class="r">售出件数<i class="q"></i><i class="sort"></i></th>
+                <th class="r">商品点击量<i class="q"></i><i class="sort"></i></th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>YOUZHAN.br</td>
+                <td>BR</td>
+                <td class="r">USD6.35</td>
+                <td class="r">1</td>
+                <td class="r">1</td>
+                <td class="r">53</td>
+                <td><a class="sp-link">更多</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+
+    <!-- ============ Right rail ============ -->
+    <aside class="sp-rail">
+      <div class="sp-rail-avatar">
+        <img src="https://deo.shopeesz.com/shopee/shopee-cschat-live-cn/static/media/seller_ai_avatar.07217f7f037674a493bf.png" width="34" height="34" alt="">
+      </div>
+      <div class="sp-rail-icon bell">
+        <svg viewBox="0 0 30 30" width="30" height="30" fill="none"><path d="M17.7639 5.68389C16.5418 3.54531 13.4582 3.54531 12.2361 5.68389C12.1244 5.87936 11.9166 5.99999 11.6914 5.99999H9.21429C8.14917 5.99999 7.28572 6.86344 7.28572 7.92856V18.0066C7.28572 18.6411 7.09788 19.2615 6.74588 19.7895L6.10797 20.7464C5.97646 20.9437 5.9642 21.1973 6.07607 21.4063C6.18794 21.6154 6.40578 21.7458 6.64286 21.7458H23.3571C23.5942 21.7458 23.8121 21.6154 23.9239 21.4063C24.0358 21.1973 24.0235 20.9437 23.892 20.7464L23.2541 19.7895C22.9021 19.2615 22.7143 18.6411 22.7143 18.0066V7.92856C22.7143 6.86344 21.8508 5.99999 20.7857 5.99999H18.3086C18.0834 5.99999 17.8756 5.87936 17.7639 5.68389Z" fill="#EE4D2D"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 23H18V23.375C18 23.6562 17.9493 23.9277 17.8552 24.1826C17.466 25.2368 16.3354 26 15 26C13.6646 26 12.534 25.2368 12.1448 24.1826C12.0507 23.9277 12 23.6562 12 23.375V23Z" fill="#EE4D2D"/></svg>
+        <span class="dot"></span>
+      </div>
+      <div class="sp-rail-icon chat">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.2167 19.0562C16.0309 19.0562 19.9335 15.4619 19.9335 11.0281C19.9335 6.59431 16.0309 3 11.2167 3C6.40261 3 2.5 6.59431 2.5 11.0281C2.5 13.3008 3.52536 15.3529 5.17326 16.8135L4.64469 19.1019C4.47937 19.8176 5.18393 20.4191 5.84238 20.1243L8.87974 18.7644C9.62348 18.9546 10.4072 19.0562 11.2167 19.0562ZM7.07629 12.3661C7.67805 12.3661 8.16588 11.8669 8.16588 11.2511C8.16588 10.6353 7.67805 10.1361 7.07629 10.1361C6.47452 10.1361 5.98669 10.6353 5.98669 11.2511C5.98669 11.8669 6.47452 12.3661 7.07629 12.3661ZM10.9988 10.1361C11.6006 10.1361 12.0884 10.6353 12.0884 11.2511C12.0884 11.8669 11.6006 12.3661 10.9988 12.3661C10.8332 12.3661 10.6755 12.328 10.535 12.2603C10.1652 12.082 9.90922 11.6972 9.90922 11.2511C9.90922 10.6353 10.3971 10.1361 10.9988 10.1361ZM14.9213 10.1361C15.5231 10.1361 16.0109 10.6353 16.0109 11.2511C16.0109 11.8669 15.5231 12.3661 14.9213 12.3661C14.7558 12.3661 14.5982 12.328 14.4576 12.2604C14.0878 12.0821 13.8318 11.6972 13.8318 11.2511C13.8318 10.6353 14.3196 10.1361 14.9213 10.1361ZM21.0951 11.0278C21.0951 15.2797 18.0653 18.7353 14.0463 19.8587C14.6796 20.0505 15.3563 20.1542 16.0593 20.1542C16.6574 20.1542 17.2365 20.0791 17.7861 19.9386L20.0304 20.9434C20.5169 21.1612 21.0375 20.7168 20.9153 20.1879L20.5248 18.497C21.7424 17.4178 22.5 15.9016 22.5 14.2223C22.5 12.8155 21.9683 11.523 21.0798 10.5062C21.0899 10.6786 21.0951 10.8525 21.0951 11.0278Z" fill="#EE4D2D"/></svg>
+        <span class="dot green"></span>
+      </div>
+    </aside>
+  </div>
+
+  <script>
+    // Hourly 总销售额 for today, 00:00 to 13:00
+    const salesByHour = [0, 0, 0, 0, 0, 0, 0, 0, 0, 6.35, 0, 0, 0, 0];
+    const yMax = 7, yStep = 1;
+
+    function drawChart() {
+      const svg = document.getElementById('spChart');
+      const W = svg.clientWidth;
+      const left = 36, right = W - 16, top = 10, bottom = 142;
+      const x = (h) => left + (right - left) * h / 24;
+      const y = (v) => bottom - (bottom - top) * v / yMax;
+      let s = `<defs><linearGradient id="spArea" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2673dd" stop-opacity=".3"/>
+        <stop offset="1" stop-color="#2673dd" stop-opacity=".02"/></linearGradient></defs>`;
+      for (let v = 0; v <= yMax; v += yStep) {
+        if (v > 0) s += `<line x1="${left}" x2="${right}" y1="${y(v)}" y2="${y(v)}" stroke="#e5e5e5" stroke-dasharray="5 4"/>`;
+        s += `<text class="sp-axis" x="${left - 8}" y="${y(v) + 4.5}" text-anchor="end">${v}</text>`;
+      }
+      s += `<line x1="${left}" x2="${right}" y1="${bottom}" y2="${bottom}" stroke="#aaa"/>`;
+      for (const hr of [0, 6, 12, 18]) {
+        s += `<line x1="${x(hr)}" x2="${x(hr)}" y1="${bottom}" y2="${bottom + 5}" stroke="#aaa"/>`;
+        s += `<text class="sp-axis" x="${x(hr)}" y="${bottom + 22}" text-anchor="middle">${String(hr).padStart(2, '0')}:00</text>`;
+      }
+      const pts = salesByHour.map((v, i) => `${x(i)},${y(v)}`).join(' ');
+      const last = salesByHour.length - 1;
+      s += `<polygon points="${x(0)},${bottom} ${pts} ${x(last)},${bottom}" fill="url(#spArea)"/>`;
+      s += `<polyline points="${pts}" fill="none" stroke="#2673dd" stroke-width="2" stroke-linejoin="round"/>`;
+      s += salesByHour.map((v, i) => `<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="#2673dd"/>`).join('');
+      svg.innerHTML = s;
+    }
+    drawChart();
+    window.addEventListener('resize', drawChart);
+
+    // Shadow on the sticky filter bar once it reaches the top of the scroll area
+    const main = document.querySelector('.sp-main');
+    const filter = document.querySelector('.sp-filter');
+    main.addEventListener('scroll', () => {
+      filter.classList.toggle('stuck', filter.getBoundingClientRect().top <= main.getBoundingClientRect().top);
+    });
+
+    const account = document.getElementById('spAccount');
+    account.querySelector('.sp-account-trigger').addEventListener('click', (e) => {
+      e.stopPropagation();
+      account.classList.toggle('open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!account.contains(e.target)) account.classList.remove('open');
+    });
+  </script>
+</body>
+</html>
